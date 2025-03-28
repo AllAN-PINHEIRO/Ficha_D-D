@@ -9,7 +9,7 @@ section{
     
 }
 
-input#atributo {
+.atributo {
     display: block;
     margin-bottom: -1px; 
     width: 50px;
@@ -19,7 +19,7 @@ input#atributo {
     border: 1px solid #0f0c0c;    
 }
 
-input#modificadores {
+.modificadores {
     display: block;
     margin-bottom: -20px; 
     width: 50px;
