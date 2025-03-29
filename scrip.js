@@ -3,14 +3,33 @@ function modificador(event) {
     var atributo = Number(inputElement.value);
     var modificadorInput = inputElement.nextElementSibling; // O próximo input na estrutura
 
+    //verifica e calcula os parametros para os modificadores
     if (!isNaN(atributo) && inputElement.value !== "") {
-        modificadorInput.value = Math.floor((atributo - 10) / 2);
+        var valorModificador = Math.floor((atributo - 10) / 2);
+        modificadorInput.value = valorModificador;
     } else {
         modificadorInput.value = "";
     }
+
+    // Chamar a função resistencia()
+    resistencia();
 }
 
-// Adiciona o evento a todos os inputs da classe "atributo"
+function resistencia() {
+    var atributos = document.querySelectorAll(".atributo"); // Todos os atributos
+    var resistencias = document.querySelectorAll(".rs"); // Todos os inputs de resistência
+
+    atributos.forEach((input, index) => {
+        var atributoValor = Number(input.value);
+        if (!isNaN(atributoValor) && input.value !== "") {
+            resistencias[index].value = Math.floor((atributoValor - 10) / 2);
+        } else {
+            resistencias[index].value = "";
+        }
+    });
+}
+
+// Adiciona os eventos de input
 document.querySelectorAll(".atributo").forEach(input => {
     input.addEventListener("input", modificador);
 });

@@ -17,12 +17,27 @@
         <p> 
             <input type="text" class="nome" placeholder="nome do personagem" >
             <div class="classe">
-                <input type="text" name="classe_nivel" class="classe_nivel" placeholder="classe/nivel">
-                <input type="text" name="antecedente" class="antecedente" placeholder="antecedente">   
-                <input type="text" class="nome do jogador" placeholder="nome do jogador" >
-                <input type="text" name="raca" class="classe" placeholder="Raça">
-                <input type="text" name="tendencia" class="classe" placeholder="tendencia">
-                <input type="text" name="XP" class="classe" placeholder="XP">
+               <input type="text" class="nome" placeholder="nome do personagem">
+
+            <div class="classe">
+                <label for="classe_nivel"></label>
+                <input type="text" id="classe_nivel" name="classe_nivel" class="classe_nivel" placeholder="classe/nivel">
+                
+                <label for="antecedente"></label>
+                <input type="text" id="antecedente" name="antecedente" class="antecedente" placeholder="antecedente">
+                
+                <label for="nome_jogador"></label>
+                <input type="text" id="nome_jogador" name="nome_jogador" class="nome_do_jogador" placeholder="nome do jogador">
+                
+                <label for="raca"></label>
+                <input type="text" id="raca" name="raca" class="raca" placeholder="Raça">
+                
+                <label for="tendencia"></label>
+                <input type="text" id="tendencia" name="tendencia" class="tendencia" placeholder="tendência">
+                
+                <label for="XP"></label>
+                <input type="text" id="XP" name="XP" class="XP" placeholder="XP">
+            
             </div>
         </p>
        
@@ -34,7 +49,7 @@
         <p>
             força
             <input type="text" name="forca" class="atributo">
-                <input type="text" name="forca" class="modificadores">
+                <input type="texta" name="forc" class="modificadores">
             
             destreza
             <input type="text" name="destreza" class="atributo" >
@@ -61,9 +76,31 @@
 
     </div>
 
+<div id="teste_resistencia">
+    teste de resistencia <br>
+    <input type="text" class="rs"> Força <br>
+    <input type="text" class="rs"> Destreza <br>
+    <input type="text" class="rs"> Constiuição <br>
+    <input type="text" class="rs"> Inteligencia <br>
+    <input type="text" class="rs"> Sabedoria <br>
+    <input type="text" class="rs"> Carisma 
+
+    <div id="proficiencia">
+        <input type="checkbox" class="proficiencia"> 
+        <input type="checkbox" class="proficiencia">
+        <input type="checkbox" class="proficiencia">
+        <input type="checkbox" class="proficiencia">
+        <input type="checkbox" class="proficiencia">
+        <input type="checkbox" class="proficiencia">
+    </div>
+</div>
 </section>
+
+<div id="teste">
+    teste
+</div>
 
     <script src="../Ficha_D-D/scrip.js"></script>
     
 </body>
-</html>
+</html> 
