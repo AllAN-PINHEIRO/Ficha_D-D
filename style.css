@@ -59,7 +59,29 @@ div#teste_resistencia{
 .proficiencia{
     display: block;
     position: relative;
-    top: -154px;
+    top: -155px;
     margin-bottom: 13px;
 
+}
+
+#bonus {
+    display: flex;
+    flex-direction: column; /* Mantém os grupos um abaixo do outro */
+    gap: 10px; /* Espaçamento entre os grupos */
+    position: relative;
+    top: -1080px;
+    margin: 100px;
+}
+
+.bonus-container {
+    display: flex;
+    align-items: center; /* Alinha o texto com o input */
+    gap: 10px; /* Espaçamento entre o input e o texto */
+}
+
+.bonus {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: flex;
 }

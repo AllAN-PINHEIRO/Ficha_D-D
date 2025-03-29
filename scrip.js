@@ -16,18 +16,31 @@ function modificador(event) {
 }
 
 function resistencia() {
+    let checkResistencia = document.querySelectorAll(".proficiencia")
+    var bonusProficiencia = document.getElementsByName("bonus_proficiencia")
+
+
     var atributos = document.querySelectorAll(".atributo"); // Todos os atributos
     var resistencias = document.querySelectorAll(".rs"); // Todos os inputs de resistência
+    var valorbonus = Number(bonusProficiencia[0].value);
 
     atributos.forEach((input, index) => {
         var atributoValor = Number(input.value);
+       
         if (!isNaN(atributoValor) && input.value !== "") {
             resistencias[index].value = Math.floor((atributoValor - 10) / 2);
-        } else {
+
+            if(!isNaN(atributoValor) && input.value !== "" && checkResistencia[index].checked){
+                 resistencias[index].value = Math.floor((atributoValor - 10) / 2) + valorbonus
+
+            }
+        } 
+        else {
             resistencias[index].value = "";
         }
     });
 }
+
 
 // Adiciona os eventos de input
 document.querySelectorAll(".atributo").forEach(input => {
