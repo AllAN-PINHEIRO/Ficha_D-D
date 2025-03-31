@@ -46,3 +46,7 @@ function resistencia() {
 document.querySelectorAll(".atributo").forEach(input => {
     input.addEventListener("input", modificador);
 });
+
+document.querySelectorAll(".proficiencia").forEach(input =>
+{ input.addEventListener("input", resistencia)}
+)
