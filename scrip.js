@@ -1,14 +1,20 @@
+function calculoModificador(atributo){
+    valorModificador =  Math.floor((atributo - 10) / 2)
+    return valorModificador
+}
+
+
 function modificador(event) {
-    var inputElement = event.target; // Pega o input que disparou o evento
+    var inputElement = event.target // Pega o input que disparou o evento
     var atributo = Number(inputElement.value);
     var modificadorInput = inputElement.nextElementSibling; // O próximo input na estrutura
 
     //verifica e calcula os parametros para os modificadores
     if (!isNaN(atributo) && inputElement.value !== "") {
-        var valorModificador = Math.floor((atributo - 10) / 2);
-        modificadorInput.value = valorModificador;
+        var valorModificador = calculoModificador(atributo);
+        modificadorInput.value = valorModificador
     } else {
-        modificadorInput.value = "";
+        modificadorInput.value = ""
     }
 
     // Chamar a função resistencia()
@@ -28,10 +34,10 @@ function resistencia() {
         var atributoValor = Number(input.value);
        
         if (!isNaN(atributoValor) && input.value !== "") {
-            resistencias[index].value = Math.floor((atributoValor - 10) / 2);
+            resistencias[index].value = calculoModificador(atributoValor)
 
             if(!isNaN(atributoValor) && input.value !== "" && checkResistencia[index].checked){
-                 resistencias[index].value = Math.floor((atributoValor - 10) / 2) + valorbonus
+                 resistencias[index].value = calculoModificador(atributoValor) + valorbonus
 
             }
         } 

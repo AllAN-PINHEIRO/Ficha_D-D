@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <section>
+<section>
 
     <div class="cabecalho">
         <header>
@@ -76,33 +76,85 @@
 
     </div>
 
-<div id="teste_resistencia">
-    teste de resistencia <br>
-    <input type="text" class="rs"> Força <br>
-    <input type="text" class="rs"> Destreza <br>
-    <input type="text" class="rs"> Constiuição <br>
-    <input type="text" class="rs"> Inteligencia <br>
-    <input type="text" class="rs"> Sabedoria <br>
-    <input type="text" class="rs"> Carisma 
+    <div id="teste_resistencia">
+        <p>Teste de resistência</p>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Força 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Destreza 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Constituição 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Inteligência 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Sabedoria 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Carisma 
+        </div>
+    </div>
 
-    <div id="proficiencia">
-        <input type="checkbox" class="proficiencia"> 
-        <input type="checkbox" class="proficiencia">
-        <input type="checkbox" class="proficiencia">
-        <input type="checkbox" class="proficiencia">
-        <input type="checkbox" class="proficiencia">
-        <input type="checkbox" class="proficiencia">
+    <div id="bonus">
+        <div class="bonus-container">
+            <input type="text" class="bonus" name="inspiracao"> <label for="inspiracao">Inspiração</label>
+        </div>
+        <div class="bonus-container">
+            <input type="text" class="bonus" name="bonus_proficiencia" oninput="resistencia()"> <label for="bonus_proficiencia">Bônus de Proficiência</label>
+        </div>
     </div>
-</div>
 
-<div id="bonus">
-    <div class="bonus-container">
-        <input type="text" class="bonus" name="inspiracao"> <label for="inspiracao">Inspiração</label>
+    <div class="pericias">
+        <p>Perícias</p>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Acrobacia 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Arcanismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Atletismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Enganação 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  História 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Acrobacia 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Arcanismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Atletismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Enganação 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  História 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Acrobacia 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Arcanismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Atletismo 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  Enganação 
+        </div>
+        <div class="linha">
+           <input type="checkbox" class="proficiencia"> <input type="text" class="rs">  História 
+        </div>
     </div>
-    <div class="bonus-container">
-        <input type="text" class="bonus" name="bonus_proficiencia" oninput="resistencia()"> <label for="bonus_proficiencia">Bônus de Proficiência</label>
-    </div>
-</div>
 
 
 
