@@ -60,10 +60,11 @@ div#teste_resistencia {
 }
 
 /* Inputs */
-.rs {
+.rs, .periciadest, .periciacar, .periciaint, .periciasab, .periciaforc{
     width: 20px;
     text-align: center;
 }
+
 
 /* Checkboxes */
 .proficiencia {
